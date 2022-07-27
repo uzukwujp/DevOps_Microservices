@@ -12,6 +12,6 @@ docker image ls
 
 # Step 3:
 # Run flask app
-docker run -it -p 8000:80 -v /home/ubuntu/DevOps_Microservices/project-ml-microservice-kubernetes/model_data:/usr/app/model_data  uzukwujp/udacity:v2 
+docker run -it -p 8000:80 -v /home/ubuntu/DevOps_Microservices/project-ml-microservice-kubernetes/model_data:/usr/app/model_data  uzukwujp/udacity:v3
 ~
 
