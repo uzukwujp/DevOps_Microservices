@@ -4,7 +4,7 @@ kind: Pod
 
 metadata:
 
-  name: flaskApp
+  name: flask-app
 
 spec:
 
@@ -12,7 +12,7 @@ spec:
 
     - name: flask-app
 
-      image: uzukwujp/udacity:v1
+      image: uzukwujp/udacity:test
 
       volumeMounts:
 
