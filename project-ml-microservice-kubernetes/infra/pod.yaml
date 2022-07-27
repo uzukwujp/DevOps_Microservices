@@ -1,0 +1,31 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: flaskApp
+
+spec:
+
+  containers:
+
+    - name: flask-app
+
+      image: uzukwujp/udacity:v1
+
+      volumeMounts:
+
+      - name: config-volume
+
+        mountPath: /usr/app/
+
+  volumes:
+
+    - name: config-volume
+
+      configMap:
+
+        name: flask-app
+
+  restartPolicy: Never
