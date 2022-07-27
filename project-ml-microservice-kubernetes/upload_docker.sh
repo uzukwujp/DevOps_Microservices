@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=uzukwujp/udacity:v1
+dockerpath=uzukwujp/udacity:v1
 
 # Step 2:
 # Authenticate & tag
