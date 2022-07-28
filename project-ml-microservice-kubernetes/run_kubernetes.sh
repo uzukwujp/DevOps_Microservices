@@ -4,15 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
- dockerpath=uzukwujp
+ dockerpath=uzukwujp/flaskapp:v7
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create configmap flask-app --from-file=./model_data
-sleep 10
-kubectl apply -f ./infra/pod.yaml
-
-
+kubectl run flask-app --image = uzukwujp/flaskapp:v7 --port = 80
 
 # Step 3:
 # List kubernetes pods
@@ -22,5 +18,6 @@ kubectl get pods
 # Forward the container port to a host
 sleep 20
 kubectl port-forward flask-app 8000:80
+
 
 
