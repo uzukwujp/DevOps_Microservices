@@ -5,15 +5,15 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=uzukwujp/flaskapp:v6
+dockerpath=uzukwujp/flaskapp:v8
 
 # Step 2:
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker tag  uzukwujp/flaskapp:v6  uzukwujp/flaskapp:v7
+docker tag  uzukwujp/flaskapp:v8  uzukwujp/flaskapp:v9
 docker login -u uzukwujp -p $password
 # Step 3:
 # Push image to a docker repository
-docker push uzukwujp/flaskapp:v7
+docker push uzukwujp/flaskapp:v9
 
 

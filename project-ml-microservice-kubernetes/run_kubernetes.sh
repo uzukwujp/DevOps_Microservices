@@ -4,11 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
- dockerpath=uzukwujp/flaskapp:v7
+ dockerpath=uzukwujp/flaskapp:v9
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run flask-app --image=uzukwujp/flaskapp:v7 --port=80
+kubectl run flask-app --image=uzukwujp/flaskapp:v9 --port=80
 
 # Step 3:
 # List kubernetes pods
